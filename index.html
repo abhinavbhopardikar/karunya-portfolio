@@ -1,12 +1,243 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Page Title</title>
-</head>
-<body>
-
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
-
-</body>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="index.css">
+        <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+        <title>Page Title</title>
+    </head>
+    <body style="overflow-x: hidden;">
+        <div class="d-none d-sm-block">
+            <div class="row">
+                <div class="col-sm-6">
+                    <a class="navbar-brand logo" href="#">
+                        <img src='./images/logo.png' style="width:100px; height: auto" alt="About image" />
+                    </a>
+                </div>
+                <div class="col-sm-6">
+                    <nav class="customNavbar">
+                        <a href="#" class="customActive">Home</a>
+                        <a href="#" class="customNavLink">about</a>
+                        <a href="#" class="customNavLink">Projects</a>
+                        <a href="#" class="customNavLink">Blog</a>
+                        <a href="#" class="customNavLink">Contact us</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light d-sm-none d-md-none d-lg-none d-xl-none">
+            <a class="navbar-brand" href="#">
+                <img src='./images/logo.png' style="width:100px; height: auto; margin-top: 12%" alt="About image" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <br />
+        <div class="row" style="padding: 3%; margin-left: 5%; margin-right: 5%">
+            <div class="col-sm-6 verticallyCenter d-none d-sm-block" style="padding: 2%; margin-top: 10%;">
+                <div>
+                    <div class="customTooltip"><h1 class="display-4" style="font-weight: 900; color:#000">Ms. Karunya Paul</h1>
+                        <div class="customTooltiptext">Hello, I'm</div>
+                    </div>
+                    <p>A Professional Web Developer and UI/UX Designer.</p>
+                </div>
+                <br />
+                <div class="d-flex flex-column flex-md-row">
+                    <a href="./images/Karunya_Paul_CV_1.pdf" type="button" class="btn btn-lg mb-3 mr-md-3" style="background: #000; color: #fff; font-size:13px; padding:2.5%; padding-left: 5%; padding-right: 5%" download>Download CV</a>
+                    <a href="#" type="button" class="btn btn-lg btn-outline-dark mb-3" style="border-color: #000; font-size:13px; padding:2.5%; padding-left: 5%; padding-right: 5%">My work</a>
+                </div>
+            </div>
+            <div class="col-sm-6" style="padding: 2%">
+                <img src='./images/Illustration.png' class="img-fluid" alt="Illustration" />
+            </div>
+            <div class="verticallyCenter d-sm-none d-md-none d-lg-none d-xl-none" style="padding: 2%; margin-top: 10%;">
+                <br /><br />
+                <div>
+                    <div class="customTooltip"><h1 class="h2" style="font-weight: 900; color:#000">Ms. Karunya Paul</h1>
+                        <div class="customTooltiptext">Hello, I'm</div>
+                    </div>
+                    <p>A Professional Web Developer and UI/UX Designer.</p>
+                </div>
+                <br />
+                <button type="button" class="btn btn-lg mb-3 mr-md- btn-block" style="background: #000; color: #fff; font-size:13px; padding:2.5%; padding-left: 5%; padding-right: 5%">Download CV</button>
+                <button type="button" class="btn btn-lg btn-outline-dark mb-3 btn-block" style="border-color: #000; font-size:13px; padding:2.5%; padding-left: 5%; padding-right: 5%">My work</button>
+            </div>
+        </div>
+        <br />
+        <div align="center">
+            <a href="#" style="text-decoration: none; color: #000">
+                <i class="material-icons" style="font-size:60px;">keyboard_arrow_down</i>
+            </a>
+        </div>
+        <br /><br />
+        <div class="row" style="padding: 3%; margin-left: 5%; margin-right: 5%">
+            <div class="col-sm-6" style="padding: 2%">
+                <img src='./images/Image.png' class="img-fluid" alt="About image" />
+            </div>
+            <div class="col-sm-6" style="padding: 2%; padding-left: 5%; padding-right: 5%">
+                <p class="h2">Read about my life story</p>
+                <br />
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat.</p>
+                <br />
+                <p>Research</p>
+                <div class="progress" style="height: 5px;">
+                    <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <br />
+                <p>Usability Testing</p>
+                <div class="progress" style="height: 5px;">
+                    <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <br />
+                <p>Prototyping</p>
+                <div class="progress" style="height: 5px;">
+                    <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <br />
+                <p>UI for web and mobile</p>
+                <div class="progress" style="height: 5px;">
+                    <div class="progress-bar" role="progressbar" style="width: 99%;" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <br />
+                <div class="row">
+                    <div class="col-sm-6">
+                        <button type="button" class="btn btn-lg btn-block" style="background: #000; color: #fff; font-size:14px; padding: 5%">Hire me</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <br />
+        <div align="center" style="margin-left: 7%; margin-right: 7%">
+            <p style="font-size: 9px; margin-bottom: -1px;"><b>|</b></p>
+            <p style="font-size: 9px; margin-bottom: -1px;"><b>|</b></p>
+            <p style="font-size: 9px; margin-bottom: -1px;"><b>|</b></p>
+            <p style="font-size: 9px; margin-bottom: -1px;"><b>|</b></p>
+            <p style="font-size: 9px; margin-bottom: 5px;"><b>|</b></p>
+            <p class='h3'><b>My projects</b></p>
+            <p style="margin-bottom: -1px;"> 
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            </p>
+            <p>    
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+        <div class="row" style="padding: 3%; margin-left: 5%; margin-right: 5%">
+            <div class="col-sm-4" style="padding: 2%">
+                <div class="imageContainer">
+                    <img src='./images/Project_1.png' class="img-fluid image" alt="About image" />
+                    <div class="overlay">
+                        <div align="center" class="text">
+                            <p class="h3">Air Quality App</p>
+                            <br />
+                            <p>
+                                Keep your family healthy and environmentally concious with air pollution information
+                            </p>
+                            <a href="#" style="text-decoration: none; color: #fff">
+                                <i class="material-icons" style="font-size:48px;">arrow_right_alt</i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <img src='./images/Project_1.png' class="img-fluid" alt="About image" /> -->
+            </div>
+            <div class="col-sm-4" style="padding: 2%">
+                <div class="imageContainer">
+                    <img src='./images/Project_2.png' class="img-fluid image" alt="About image" />
+                    <div class="overlay">
+                        <div align="center" class="text">
+                            <p class="h3">Air Quality App</p>
+                            <br />
+                            <p>
+                                Keep your family healthy and environmentally concious with air pollution information
+                            </p>
+                            <a href="#" style="text-decoration: none; color: #fff">
+                                <i class="material-icons" style="font-size:48px;">arrow_right_alt</i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <img src='./images/Project_2.png' class="img-fluid image" alt="About image" /> -->
+            </div>
+            <div class="col-sm-4" style="padding: 2%">
+                <div class="imageContainer">
+                    <img src='./images/Project_3.png' class="img-fluid image" alt="About image" />
+                    <div class="overlay">
+                        <div align="center" class="text">
+                            <p class="h3">Air Quality App</p>
+                            <br />
+                            <p>
+                                Keep your family healthy and environmentally concious with air pollution information
+                            </p>
+                            <a href="#" style="text-decoration: none; color: #fff">
+                                <i class="material-icons" style="font-size:48px;">arrow_right_alt</i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <img src='./images/Project_3.png' class="img-fluid" alt="About image" /> -->
+            </div>
+            <div class="col-sm-4" style="padding: 2%">
+                <div class="imageContainer">
+                    <img src='./images/Project_4.png' class="img-fluid image" alt="About image" />
+                    <div class="overlay">
+                        <div align="center" class="text">
+                            <p class="h3">Air Quality App</p>
+                            <br />
+                            <p>
+                                Keep your family healthy and environmentally concious with air pollution information
+                            </p>
+                            <a href="#" style="text-decoration: none; color: #fff">
+                                <i class="material-icons" style="font-size:48px;">arrow_right_alt</i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- <img src='./images/Project_4.png' class="img-fluid" alt="About image" /> -->
+            </div>
+            <!-- <div class="col-sm-4" style="padding: 2%">
+                <img src='./images/Image.png' class="img-fluid" alt="About image" />
+            </div>
+            <div class="col-sm-4" style="padding: 2%">
+                <img src='./images/Image.png' class="img-fluid" alt="About image" />
+            </div> -->
+        </div>
+        <div class="row" style="padding: 2%; margin-left: 5%; margin-right: 5%">
+            <div class="col-sm-5"></div>
+            <div class="col-sm-2">
+                <button type="button" class="btn btn-lg btn-block" style="background: #000; color: #fff; font-size:14px; padding: 5%">View all</button>
+            </div>
+        </div>
+        <br />
+    </body>
 </html>
