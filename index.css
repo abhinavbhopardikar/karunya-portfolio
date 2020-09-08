@@ -187,25 +187,9 @@
     font-size: 13px;
   }
 
-  /* p {
-    font-family: 'Montserrat', sans-serif;
-  } 
-
-  h1 {
-    font-family: 'Montserrat', sans-serif;
+  p.body1 {
+    font-size: 14px;
   }
-
-  button {
-    font-family: 'Montserrat', sans-serif;
-  }
-
-  a {
-    font-family: 'Montserrat', sans-serif;
-  }
-
-  li {
-    font-family: 'Montserrat', sans-serif;
-  } */
 
   body {
     font-family: 'Montserrat', sans-serif;
