@@ -177,6 +177,12 @@
   color: var(--unnamed-color-0fbf61);
   }
 
+  p.caption {
+    font-size: 14px;
+    padding-left: 12%; 
+    padding-right: 12%; 
+  }
+
   /* p {
     font-family: 'Montserrat', sans-serif;
   } 
