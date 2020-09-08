@@ -177,10 +177,14 @@
   color: var(--unnamed-color-0fbf61);
   }
 
-  p.caption {
+  p.caption-with-padding {
     font-size: 14px;
     padding-left: 12%; 
     padding-right: 12%; 
+  }
+
+  p.caption {
+    font-size: 13px;
   }
 
   /* p {
