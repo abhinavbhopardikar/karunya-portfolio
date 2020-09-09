@@ -81,7 +81,7 @@
 .text {
   color: white;
   font-size: 20px;
-  margin-top: 23%;
+  margin-top: 28%;
   opacity: 1;
 }
 
@@ -177,8 +177,12 @@
   color: var(--unnamed-color-0fbf61);
   }
 
+  .animate__animated.animate__bounce {
+    --animate-duration: 2s;
+  }
+
   p.caption-with-padding {
-    font-size: 14px;
+    font-size: 13px;
     padding-left: 12%; 
     padding-right: 12%; 
   }
@@ -189,6 +193,11 @@
 
   p.body1 {
     font-size: 14px;
+  }
+
+  p.subtitle {
+    font-size: 16px;
+    font-weight: 900;
   }
 
   body {
