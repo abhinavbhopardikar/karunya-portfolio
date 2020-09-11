@@ -204,3 +204,23 @@
   body {
     font-family: 'Montserrat', sans-serif;
   }
+
+  th, td {
+    padding: 5px;
+  }
+
+  .uiHover {
+    opacity: 0.5;
+  }
+
+  .uiHover:hover {
+    opacity: 1;
+  }
+
+  .uxHover {
+    opacity: 0.5;
+  }
+
+  .uxHover:hover {
+    opacity: 1;
+  }
