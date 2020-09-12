@@ -70,6 +70,36 @@
   border-radius: 12px;
 }
 
+.overlay2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: rotate(-90deg);
+  /* height: 100%; */
+  width: 80%;
+  opacity: 1;
+  transition: .5s ease;
+  /* background-color: #444547; */
+  border-radius: 12px;
+}
+
+.overlay3 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: rotate(-90deg);
+  /* height: 100%; */
+  width: 140%;
+  opacity: 1;
+  transition: .5s ease;
+  /* background-color: #444547; */
+  border-radius: 12px;
+}
+
 .imageContainer:hover .overlay {
   opacity: 0.8;
 }
