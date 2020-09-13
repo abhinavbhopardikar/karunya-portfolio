@@ -226,7 +226,17 @@
     letter-spacing: var(--unnamed-character-spacing-0);
     /* color: var(--unnamed-color-151d41); */
     }
+  
   .character-style-4 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-bold);
+    font-size: 25px;
+    line-height: var(--unnamed-line-spacing-50);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    /* color: var(--unnamed-color-151d41); */
+    }
+  .character-style-5 {
   font-family: var(--unnamed-font-family-playfair-display);
   font-style: var(--unnamed-font-style-normal);
   font-weight: var(--unnamed-font-weight-normal);
@@ -248,6 +258,10 @@
 
   p.caption {
     font-size: 13px;
+  }
+
+  p.footerText {
+    margin-top: -5%;
   }
 
   p.body1 {
