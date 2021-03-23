@@ -54,6 +54,17 @@ html {
   width: 100%;
 }
 
+.projectThumbnail {
+  border-radius: 15px;
+  box-shadow: 5px 10px 10px #888888;
+}
+
+.imageContainer2 {
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+}
+
 .image {
   display: block;
   width: 100%;
