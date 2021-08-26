@@ -1,0 +1,416 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  .container {
+      display: none; /* or inline-flex */
+      width:  0%;
+  }
+  
+  .customTooltip {
+    position: relative;
+    display: inline-block;
+    color: '#000';
+  }
+  
+  .customTooltiptext {
+    visibility: visible;
+    /* width: 30%;
+    height: 20%; */
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    position: absolute;
+    z-index: 1;
+    bottom: 110%;
+    left: 0%;
+    margin-left: -0px;
+    padding: 2%;
+    padding-right: 7%;
+    padding-left: 7%;
+  }
+  
+  .customTooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -7px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+  
+  .verticallyCenter {
+    /* margin: auto; */
+    /* swidth: 100%; */
+    vertical-align: middle;
+    /* padding: 10px; */
+  }
+  
+  .imageContainer {
+    position: relative;
+    width: 100%;
+  }
+  
+  .projectThumbnail {
+    border-radius: 15px;
+    box-shadow: 5px 10px 10px #888888;
+  }
+  
+  .imageContainer2 {
+    position: relative;
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #444547;
+    border-radius: 12px;
+  }
+  
+  .overlay2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: rotate(-90deg);
+    /* height: 100%; */
+    width: 80%;
+    opacity: 1;
+    transition: .5s ease;
+    /* background-color: #444547; */
+    border-radius: 12px;
+  }
+  
+  .overlay3 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: rotate(-90deg);
+    /* height: 100%; */
+    width: 140%;
+    opacity: 1;
+    transition: .5s ease;
+    /* background-color: #444547; */
+    border-radius: 12px;
+  }
+  
+  .overlay4 {
+    position: absolute;
+    top: 3%;
+    bottom: 3%;
+    left: 6%;
+    right: 6%;
+    /* height: 100%; */
+    width: 58%;
+    opacity: 1;
+    transition: .5s ease;
+    /* background-color: #444547; */
+    border-radius: 12px;
+  }
+  
+  .overlay5 {
+    position: absolute;
+    top: 3%;
+    bottom: 3%;
+    left: 6%;
+    right: 6%;
+    /* height: 100%; */
+    width: 88%;
+    opacity: 1;
+    transition: .5s ease;
+    /* background-color: #444547; */
+    border-radius: 12px;
+  }
+  
+  .imageContainer:hover .overlay {
+    opacity: 0.8;
+  }
+  
+  .imageContainer:click .overlay {
+    opacity: 0.8;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    margin-top: 28%;
+    opacity: 1;
+  }
+  
+  .text2 {
+    color: white;
+    font-size: 20px;
+    margin-top: 25%;
+    opacity: 1;
+  }
+  
+  .customNavbar {
+    padding: 5%;
+    border-bottom-left-radius: 40px;
+    background-color: #000;
+  }
+  
+  .customNavLink {
+    margin: 5%;
+    margin-top: 10%;
+    color: #fff;
+    font-size: 13px;
+    text-decoration: none;
+  }
+  
+  .customActive {
+    margin: 5%;
+    margin-top: 10%;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 800;
+    text-decoration: none;
+  }
+  
+  .logo {
+    padding: 5%;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  
+  :root {
+  
+    /* Colors: */
+    --unnamed-color-ffffff: #FFFFFF;
+    --unnamed-color-707070: #707070;
+    --unnamed-color-686868: #686868;
+    --unnamed-color-151d41: #151D41;
+    --unnamed-color-0fbf61: #0FBF61;
+    
+    /* Font/text values */
+    --unnamed-font-family-montserrat: Montserrat;
+    --unnamed-font-family-poppins: Poppins;
+    --unnamed-font-family-playfair-display: Playfair Display;
+    --unnamed-font-style-normal: normal;
+    --unnamed-font-style-italic: italic;
+    --unnamed-font-weight-300: 300px;
+    --unnamed-font-weight-600: 600px;
+    --unnamed-font-weight-bold: bold;
+    --unnamed-font-weight-normal: normal;
+    --unnamed-font-size-18: 18px;
+    --unnamed-font-size-40: 40px;
+    --unnamed-font-size-50: 50px;
+    --unnamed-character-spacing-0: 0px;
+    --unnamed-line-spacing-35: 35px;
+    --unnamed-line-spacing-50: 50px;
+    }
+    
+    /* Character Styles */
+    .character-style-1 {
+    font-family: var(--unnamed-font-family-montserrat);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-300);
+    font-size: var(--unnamed-font-size-18);
+    line-height: var(--unnamed-line-spacing-35);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-686868);
+    }
+    .character-style-2 {
+    font-family: 'Montserrat', sans-serif;
+    /* font-style: var(--unnamed-font-style-italic); */
+    font-weight: var(--unnamed-font-weight-bold);
+    font-size: var(--unnamed-font-size-40);
+    line-height: var(--unnamed-line-spacing-50);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    /* color: var(--unnamed-color-151d41); */
+    }
+    .character-style-3 {
+      font-family: 'Montserrat', sans-serif;
+      font-style: var(--unnamed-font-style-normal);
+      font-weight: var(--unnamed-font-weight-bold);
+      font-size: 30px;
+      line-height: var(--unnamed-line-spacing-50);
+      letter-spacing: var(--unnamed-character-spacing-0);
+      /* color: var(--unnamed-color-151d41); */
+      }
+    
+    .character-style-4 {
+      font-family: 'Montserrat', sans-serif;
+      font-style: var(--unnamed-font-style-normal);
+      font-weight: var(--unnamed-font-weight-bold);
+      font-size: 25px;
+      line-height: var(--unnamed-line-spacing-50);
+      letter-spacing: var(--unnamed-character-spacing-0);
+      /* color: var(--unnamed-color-151d41); */
+      }
+    .character-style-5 {
+    font-family: var(--unnamed-font-family-playfair-display);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-normal);
+    font-size: var(--unnamed-font-size-18);
+    line-height: var(--unnamed-line-spacing-35);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-0fbf61);
+    }
+  
+    .animate__animated.animate__bounce {
+      --animate-duration: 2s;
+    }
+  
+    p.caption-with-padding {
+      font-size: 13px;
+      padding-left: 12%; 
+      padding-right: 12%; 
+    }
+  
+    p.caption {
+      font-size: 13px;
+    }
+  
+    p.footerText {
+      margin-top: -5%;
+    }
+  
+    p.body1 {
+      font-size: 14px;
+    }
+  
+    p.subtitle {
+      font-size: 16px;
+      font-weight: 900;
+    }
+  
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+  
+    th, td {
+      padding: 5px;
+    }
+  
+    .uiHover {
+      opacity: 0.5;
+    }
+  
+    .uiHover:hover {
+      opacity: 1;
+    }
+  
+    .uxHover {
+      opacity: 0.5;
+    }
+  
+    .uxHover:hover {
+      opacity: 1;
+    }
+  
+    .sans-font {
+      font-family: 'Open sans', sans-serif;
+      font-style: var(--unnamed-font-style-normal);
+      font-weight: var(--unnamed-font-weight-bold);
+      font-size: 20px;
+      line-height: var(--unnamed-line-spacing-50);
+      letter-spacing: var(--unnamed-character-spacing-0);
+    }
+  
+    .sans-font-glyphs {
+      font-family: 'Open sans', sans-serif;
+      font-style: var(--unnamed-font-style-normal);
+      font-size: 16px;
+      letter-spacing: 5px;
+    }
+    
+    .bubbly-button {
+      display: inline-block;
+      font-size: 1em;
+      padding: 1em 2em;
+      -webkit-appearance: none;
+      appearance: none;
+      color: #fff;
+      border-radius: 4px;
+      cursor: pointer;
+      position: relative;
+      transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+      box-shadow: 0 2px 10px rgba(43, 43, 42, 0.5);
+    }
+    .bubbly-button:focus {
+      outline: 0;
+    }
+    .bubbly-button:before, .bubbly-button:after {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 140%;
+      height: 100%;
+      left: -20%;
+      z-index: -1000;
+      transition: all ease-in-out 0.5s;
+      background-repeat: no-repeat;
+    }
+    .bubbly-button:before {
+      display: none;
+      top: -75%;
+      background-image: radial-gradient(circle, #000 20%, transparent 20%), radial-gradient(circle, transparent 20%, #000 20%, transparent 30%), radial-gradient(circle, #000 20%, transparent 20%), radial-gradient(circle, #000 20%, transparent 20%), radial-gradient(circle, transparent 10%, #000 15%, transparent 20%), radial-gradient(circle, #000 20%, transparent 20%), radial-gradient(circle, #000 20%, transparent 20%), radial-gradient(circle, #000 20%, transparent 20%), radial-gradient(circle, #000 20%, transparent 20%);
+      background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+    }
+    .bubbly-button:after {
+      display: none;
+      bottom: -75%;
+      background-image: radial-gradient(circle, #000 20%, transparent 20%), radial-gradient(circle, #000 20%, transparent 20%), radial-gradient(circle, transparent 10%, #000 15%, transparent 20%), radial-gradient(circle, #000 20%, transparent 20%), radial-gradient(circle, #000 20%, transparent 20%), radial-gradient(circle, #000 20%, transparent 20%), radial-gradient(circle, #000 20%, transparent 20%);
+      background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+    }
+    .bubbly-button:active {
+      transform: scale(0.9);
+      background-color: #2b2b2a;
+      box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2);
+    }
+    .bubbly-button.animate:before {
+      display: block;
+      animation: topBubbles ease-in-out 0.75s forwards;
+    }
+    .bubbly-button.animate:after {
+      display: block;
+      animation: bottomBubbles ease-in-out 0.75s forwards;
+    }
+    
+    @keyframes topBubbles {
+      0% {
+        background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+      }
+      50% {
+        background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+      }
+      100% {
+        background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+        background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+      }
+    }
+    @keyframes bottomBubbles {
+      0% {
+        background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+      }
+      50% {
+        background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+      }
+      100% {
+        background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+        background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+      }
+    }
+    
