@@ -81,6 +81,12 @@ html {
   border-radius: 12px;
 }
 
+.image3 {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .overlay {
   position: absolute;
   top: 0;
