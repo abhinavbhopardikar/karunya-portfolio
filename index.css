@@ -13,6 +13,12 @@ html {
   color: '#000';
 }
 
+.appCard {
+  position: relative;
+  width: 100%;
+  border-radius: 12px;
+}
+
 .customTooltiptext {
   visibility: visible;
   /* width: 30%;
