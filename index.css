@@ -70,7 +70,8 @@ html {
 
 .appCard {
   border-radius: 15px;
-  box-shadow: 2px 2px 4px #888888;
+  box-shadow: 1px 7px 15px 12px #888888;
+  /* box-shadow: 5px 15px 15px 10px #888888; */
 }
 
 .imageContainer3 {
