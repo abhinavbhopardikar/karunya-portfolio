@@ -60,6 +60,7 @@ html {
   max-height: 23em;
   /* min-height: 25em; */
   border-radius: 12px;
+  box-shadow: 1px 3px 25px 3px #888888;
   overflow: hidden;
 }
 
@@ -90,6 +91,7 @@ html {
   max-height: 23em;
   /* min-height: 23em; */
   border-radius: 12px;
+  box-shadow: 1px 3px 25px 3px #888888;
 }
 
 .image2 {
